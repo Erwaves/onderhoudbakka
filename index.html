@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Babboe Overzicht</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f7f2;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #4caf50, #2e7d32);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+
+      .header p {
+        opacity: 0.9;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+
+      .bike-info {
+        background: white;
+        border: 2px solid #4caf50;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 40px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      .bike-info h2 {
+        margin-bottom: 15px;
+        color: #2e7d32;
+      }
+
+      .bike-details {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+      }
+
+      .detail {
+        padding: 10px;
+        background: #f8faf7;
+        border-radius: 8px;
+      }
+
+      .detail strong {
+        color: #2e7d32;
+      }
+
+      .repair-section h2 {
+        margin-bottom: 20px;
+        color: #2e7d32;
+      }
+
+      .repair-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 25px;
+      }
+
+      .repair-card {
+        background: white;
+        border-radius: 15px;
+        border: 1px solid #4caf50;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s;
+      }
+
+      .repair-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .repair-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .repair-content {
+        padding: 20px;
+      }
+
+      .repair-content h3 {
+        margin-bottom: 10px;
+        color: #2e7d32;
+      }
+
+      .priority {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 6px 12px;
+        border-radius: 20px;
+        background: #fff3cd;
+        color: #856404;
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+
+      .footer {
+        text-align: center;
+        color: #888;
+        padding: 40px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>🚲 Bakfiets Reparatie Overzicht</h1>
+      <p>Werkzaamheden en aandachtspunten voor reparatie en onderhoud</p>
+    </div>
+
+    <div class="container">
+      <section class="bike-info">
+        <h2>📋 Algemene informatie</h2>
+
+        <div class="bike-details">
+          <div class="detail">
+            <strong>Model:</strong><br />
+            Babboe City Mountain
+          </div>
+
+          <div class="detail">
+            <strong>Aangeschaft in:</strong><br />
+            2023
+          </div>
+
+          <div class="detail">
+            <strong>Kilometerstand:</strong><br />
+            xx km
+          </div>
+
+          <div class="detail">
+            <strong>ID:</strong><br />
+            AC2679867
+          </div>
+        </div>
+      </section>
+
+      <section class="repair-section">
+        <h2>🔧 Aandachtspunten</h2>
+
+        <div class="repair-grid">
+          <div class="repair-card">
+            <img
+              src="https://www.babboe.co.uk/media/catalog/product/cache/9b0d763a21bdb053fe318b53defbc037/b/a/babboe_city_mountain_VLT2020_c51d.jpg"
+              alt="Remmen"
+            />
+
+            <div class="repair-content">
+              <h3>Versnelling</h3>
+
+              <p>
+                De versnellingskabels zitten los en in de knoop, versnellen lukt
+                niet meer en de naafversnelling glijdt langzaam maar zeker naar
+                de lichtste variant. Er moet handmatig worden versneld bij het
+                achterwiel om nog te kunnen fietsen. Chainglider moet ook
+                vervangen worden want het lijkt alsof er een onderdeel mist.
+              </p>
+            </div>
+          </div>
+
+          <div class="repair-card">
+            <img
+              src="https://www.babboe.co.uk/media/catalog/product/cache/9b0d763a21bdb053fe318b53defbc037/b/a/babboe_city_mountain_VLT2020_c51d.jpg"
+              alt="Remmen"
+            />
+
+            <div class="repair-content">
+              <h3>Achterwiel/Slot</h3>
+
+              <p>
+                Het achterwiel en daarmee ook de achterband staat erg dichtbij
+                het slot. Daardoor schaaft het slot tegen de band. Het
+                achterwiel moet beter gecentreerd zijn in het frame. Eventueel
+                vervangen van de achterband bij acuut gevaar.
+              </p>
+            </div>
+          </div>
+
+          <div class="repair-card">
+            <img
+              src="https://www.babboe.co.uk/media/catalog/product/cache/9b0d763a21bdb053fe318b53defbc037/b/a/babboe_city_mountain_VLT2020_c51d.jpg"
+              alt="Remmen"
+            />
+
+            <div class="repair-content">
+              <h3>Voorverlichting</h3>
+
+              <p>
+                De kabels voor het licht voor zit niet heel stabiel, soms
+                tijdens het fietsen op bijvoorbeeld tegels of drempels
+                (oneffenheden) gaat het licht wat zwakker schijnen, of valt uit
+                of gaat weer goed aan.
+              </p>
+            </div>
+          </div>
+
+          <div class="repair-card">
+            <img
+              src="https://www.babboe.co.uk/media/catalog/product/cache/9b0d763a21bdb053fe318b53defbc037/b/a/babboe_city_mountain_VLT2020_c51d.jpg"
+              alt="Remmen"
+            />
+
+            <div class="repair-content">
+              <h3>Trapgeluiden</h3>
+
+              <p>
+                Tijdens het trappen horen we geratel, dit is alleen tijdens het
+                trappen. Niet als we de benen stilhouden (maar nog wel rijden).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer">🚴 Onderhoudsoverzicht Bakka • Erwin de Leeuw</div>
+  </body>
+</html>
